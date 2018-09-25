@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body{
 	color: #01F1FF;
 	font-family: 'Roboto', sans-serif;
@@ -10,13 +11,25 @@ body{
 	background-color: #333333;
 }
 
+html, body{
+	height: 100%;
+}
+
+.sticky-top{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
 .my-name{
 	margin-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 60px;
+	font-size: 55px;
 	color: #E4E7FF;
 	font-weight: 700;
+	background-color: #333333;
+	padding: 10px;
 }
 
 .profession{
@@ -25,102 +38,236 @@ body{
 	font-size: 20px;
 	font-weight: 600;
 	color: #E4E7FF;
+	background-color: #333333;
 }
-
 
 a{
 	color: white;
 }
 
 .main{
-	background-image: url(../img/neon-lem.jpg);
+	background-image: url(../img/macbook.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: top center;
-	height: 720px;
+	height: 100vh;
 	width: 100%;
 }
 
-/* //////////////////////////// */
-.footer{
-	color: #E4E7FF;
-	margin: 0 auto;
-	text-align: center;
+#mypic{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
+
+
+/* //////////////////////////// */
+
 .home-name{
+	margin: 0;
 	text-align: center;
-	/*transform: translate(-50%, -50%);*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 #about{
-	padding: 50px;
-	min-height: 500px;
+	padding: 40px;
+	min-height: 100px;
 }
 
 .first-img,.second-img,.third-img,.fourth-img{
 	height: 350px;
-	width: 250px;
+	width: 270px;
 	/*background-color: grey;*/
 }
 
 #skills{
-	height: 500px;
+	min-height: 300px;
 	width: 100%;
 	/*background-color: white;*/
 	padding: 50px;
-	overflow: hidden;
 }
 
-.card-custom{
-	float: left;
+.skill-code{
+	text-align: center;
 }
 
-.img-customize{
-	margin-top: 20px;
-	`
+.skill-proficiency{
+	text-align: center;
+	margin-bottom: 60px;
 }
 
-.clear:after{ 
-	/* looks for the last element  INSIDE 
-	the clear class and add the style 
-	below*/
-	content: ""; /* no content */
-	clear: both; /* ignores all floats */
-	display: block; /* generic div element */
+.skill-img{
+	text-align: center;
+}
+
+.html-skill, .css-skill{
+	font-size: 200px;
+}
+
+.html-skill{
+	color: #ff3333;
+	/*margin-left: 40px;*/
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+.css-skill{
+	color: #1a53ff;
+	/*margin-left: 40px;*/
+	margin-bottom: 20px;
+}
+
+.bootstrap-skill{
+	/*margin-top: 40px;*/
+	height: 200px;
+	width: 200px;
+	/*margin-left: 20px;*/
+	margin-bottom: 20px;
+}
+
+.progress-margin{
+	margin-bottom: 10px;
 }
 
 #capstone{
-	padding: 50px;
+	padding: 10px;
+	min-height: 300px;
+}
+
+.check-it-btn{
+	padding: 20px;
+	border: 2px solid #01F1FF;
+	color: #01F1FF;
+}
+
+.check-it-btn:hover{
+	padding: 20px;
+	border: 2px solid #01F1FF;
+	text-decoration: none;
+	background-color: #4DF5FF;
+	color: #333333;
 }
 
 #contact{
 	/*background-color: white;*/
-	padding: 50px;
+	padding: 30px;
 }
 
 .contact-info{
 	text-align: center;
-	/*left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);*/
+}
+
+.contact-info p{
+	font-size: 25px;
 }
 
 #footer{
-	padding: 50px;
+	padding: 30px;
 	/*display: inline-block;*/
+}
+
+.checkme{
+	text-align: center;
+}
+
+.copyright-margin{
+	margin-top: 20px;
+	text-align: center;
 }
 
 .social-icon{
 	margin-top: 20px;
 	font-size: 25px;
-	float: right;
-	/*display: inline-block;*/
+	/*float: right;*/
+	text-align: center;
 }
 
 i{
+	padding-right: 10px;
+}
+
+.capstone-description{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.name-bg{
+	background-color: #333333;
 	padding: 10px;
 }
+
+@media only screen and (min-width: 769px) {
+
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px){ 
+	#mypic{
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	.carousel{
+		margin: 50px 10px 0 10px;
+	}
+
+	.my-name{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.main{
+		background-position: 100% 0%;
+	}
+
+	#mypic{
+		height: 150px;
+		width: 150px;
+		border-radius: 50%;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	.my-name{
+		font-size: 25px;
+	}
+
+	.profession{
+		font-size: 13px;
+	}
+
+	.carousel{
+		margin: 50px 10px 0 10px;
+	}
+
+	.social-icon{
+		margin-top: 20px;
+		font-size: 19px;
+		text-align: center;
+	}
+
+	.contact-info p{
+		font-size: 20px;
+	}
+
+	.capstone-description{
+		font-size: 17px;
+	}
+}
+
 
 
