@@ -107,8 +107,17 @@ a{
 	text-align: center;
 }
 
-.html-skill, .css-skill{
+.html-skill, .css-skill, .js-skill, .sql-skill, .php-skill{
 	font-size: 200px;
+}
+
+.js-skill{
+	color: #F5E344;
+	/*margin-left: 40px;*/
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .html-skill{
@@ -121,8 +130,20 @@ a{
 
 }
 
+.sql-skill{
+	color: #f2f2f2;
+	/*margin-left: 40px;*/
+	margin-bottom: 20px;
+}
+
 .css-skill{
 	color: #1a53ff;
+	/*margin-left: 40px;*/
+	margin-bottom: 20px;
+}
+
+.php-skill{
+	color: #6136B6;
 	/*margin-left: 40px;*/
 	margin-bottom: 20px;
 }
