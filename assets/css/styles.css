@@ -1,0 +1,108 @@
+/* Author: Lemuel H. Untalan
+    Date: February 7, 2020
+*/
+
+/* -------------------------- UNIVERSAL ---------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FBFBFB;
+}
+h1, h2 {
+    font-weight: 700;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+}
+
+/* ----------------------------- end ---------------------------------- */
+
+/* -------------------------- HELPERS ---------------------------- */
+
+.txt-reg { font-weight: 400; }
+.txt-bold { font-weight: 700; }
+.txt-lower { text-transform: lowercase; }
+.txt-upper { text-transform: uppercase; }
+
+/* ----------------------------- end ---------------------------------- */
+
+/* ----------------------------- MAIN ---------------------------------- */
+
+.landing-page {
+    background-image: url('../img/abstract-bg-cropped.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* ----------------------------- end ---------------------------------- */
+
+/* -------------------------- MAIN HEADER ---------------------------- */
+
+.main-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.navbar {
+    color: #9C9C9C;
+    padding-left: 0;
+    padding-left: right;
+}
+.nav-item {
+    padding: 15px 30px;
+    background-color: #cccccc;
+}
+.nav-item:hover {
+    background-color: #1a1a1a;
+}
+.nav-item a {
+    color: #1a1a1a;
+}
+.nav-item:hover a {
+    color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+.nav-link {
+    padding: 0;
+}
+
+/* ----------------------------- end ---------------------------------- */
+
+/* ----------------------------- BANNER ---------------------------------- */
+
+.banner-section {
+    padding-bottom: 50px;
+}
+.grad-pic {
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    margin-bottom: 2rem;
+}
+.introduction {
+    margin-top: 100px;
+}
+.main-title {
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------- END ---------------------------------- */
+
+/* ----------------------------- About ---------------------------------- */
+
+.about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* ----------------------------- END ---------------------------------- */
+
+
