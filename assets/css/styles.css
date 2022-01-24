@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FBFBFB;
@@ -21,6 +24,23 @@ h1 {
 }
 h2 {
     font-size: 36px;
+}
+.subtitle {
+  margin-bottom: 25px;
+}
+.section-container-design {
+  background-color: #FBFBFB;
+  padding: 50px;
+}
+@media only screen and (min-width: 576px) {
+  .section-container-design {
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .section-container-design {
+    padding: 40px 25px;
+  }
 }
 
 /* ----------------------------- end ---------------------------------- */
@@ -38,11 +58,31 @@ h2 {
 
 .landing-page {
     background-image: url('../img/abstract-bg-cropped.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 0 -70px;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
+/* @media only screen and (min-width: 1921px) {
+  .landing-page {
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  .landing-page {
+    background-size: 125%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .landing-page {
+    background-size: 275%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .landing-page {
+    background-size: 500%;
+  }
+} */
 /* ----------------------------- end ---------------------------------- */
 
 /* -------------------------- MAIN HEADER ---------------------------- */
@@ -73,6 +113,19 @@ h2 {
 .nav-link {
     padding: 0;
 }
+.navbar-toggler {
+  background-color: #9368B8;
+}
+.navbar-toggler .fas.fa-bars {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 575px) {
+  .main-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 /* ----------------------------- end ---------------------------------- */
 
@@ -93,16 +146,121 @@ h2 {
 .main-title {
     margin-bottom: 1rem;
 }
+@media only screen and (max-width: 575px) {
+  .introduction {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-title {
+    font-size: 32px;
+  }
+  .grad-pic {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 /* ----------------------------- END ---------------------------------- */
 
 /* ----------------------------- About ---------------------------------- */
 
 .about-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.skills {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.skills-list,
+.pro-exp-list {
+  list-style: none;
+}
+.professional-experience .pro-exp-work {
+  font-size: 20px;
+  color: #8174C4;
+  font-weight: 700;
+}
+.professional-experience .pro-exp-work:hover {
+  text-decoration: none;
+  color: #5A92E0;
+  transition: color 0.5s;
+}
+@media only screen and (max-width: 575px) {
+  .about-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/* ----------------------------- END ---------------------------------- */
+
+/* ----------------------------- Projects ---------------------------------- */
+
+.projects-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.project-card {
+  margin-bottom: 50px;
+}
+.project-card ul {
+  list-style: none;
+}
+.project-card h3 a {
+  color: #8174C4;
+}
+.project-card h3 a:hover {
+  text-decoration: none;
+  color: #5A92E0;
+  transition: color 0.5s;
+}
+.project-screenshot {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 575px) {
+  .projects-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* ----------------------------- END ---------------------------------- */
 
+/* ----------------------------- Contact ---------------------------------- */
 
+.contact-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.my-email,
+.my-linkedin {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.my-email a,
+.my-linkedin a {
+  color: #8174C4; 
+}
+.my-email a:hover,
+.my-linkedin a:hover {
+  text-decoration: none;
+  color: #5A92E0;
+  transition: color 0.5s;
+}
+.my-linkedin {
+  font-size: 24px;
+}
+@media only screen and (max-width: 575px) {
+  .contact-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .my-email,
+  .my-linkedin {
+    font-size: 18px;
+  }
+}
+
+
+/* ----------------------------- END ---------------------------------- */
