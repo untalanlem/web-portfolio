@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5ccdb4db.css",
+    "main.js": "/static/js/main.5795e672.js",
+    "static/media/abstract-bg-cropped.jpg": "/static/media/abstract-bg-cropped.dfafcbcb1e98f3467995.jpg",
+    "static/media/vivant_founation_website_ss.jpg": "/static/media/vivant_founation_website_ss.a9f9e8b783a7d6852b46.jpg",
+    "static/media/hackno_website_ss.jpg": "/static/media/hackno_website_ss.f58fb19d2cc997586c9f.jpg",
+    "static/media/lodestar_legal_website_ss.jpg": "/static/media/lodestar_legal_website_ss.1366e3c0264b832a5c05.jpg",
+    "static/media/index94_website_ss.jpg": "/static/media/index94_website_ss.ae61a9389dc037e4428e.jpg",
+    "static/media/grad-lem.jpg": "/static/media/grad-lem.85e8859932708051bc64.jpg",
+    "index.html": "/index.html",
+    "main.5ccdb4db.css.map": "/static/css/main.5ccdb4db.css.map",
+    "main.5795e672.js.map": "/static/js/main.5795e672.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ccdb4db.css",
+    "static/js/main.5795e672.js"
+  ]
+}
